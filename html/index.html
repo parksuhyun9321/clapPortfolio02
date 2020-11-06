@@ -12,17 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/response.css">
-    <script src="../js/main.js" defer></script>
-</head>
     <script>
         let ratio = window.devicePixelRatio;
         let width = window.innerWidth;
         if (ratio == 2 && width <= 1024) {
-            window.location.href = "../html/mobile.html";
-        } else if (ratio ==1 && width > 1024){
-            window.location.href = "../html/index.html";
+            document.location.href = "../html/mobile.html";
         }
     </script>
+    <script src="../js/main.js" defer></script>
+</head>
+
 <body>
     <div class="background"></div>
     <header id="header">
