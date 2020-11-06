@@ -359,5 +359,11 @@
         </section>
     </main>
 </body>
-
+<script>
+    let width = window.innerWidth;
+    let ratio = window.devicePixelRatio;
+    if (ratio == 2 && width <= 1024) {
+        document.location.href = "../html/mobile.html";
+    }
+</script>
 </html>
