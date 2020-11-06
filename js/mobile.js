@@ -1,3 +1,9 @@
+let ratio = window.devicePixelRatio;
+
+if(ratio == 1) {
+    document.location.href ="../html/index.html";
+}
+
 
 const memo = document.querySelector(".gnbList li:nth-child(4)");
 const memoCon = document.getElementById("memo");
@@ -47,11 +53,4 @@ for(let i=0;i<btnBack.length; i++){
         skillCon.classList.remove("on");
         portofolioCon.classList.remove("on")
     });
-}
-
-
-let ratio = window.devicePixelRatio;
-
-if(ratio == 1) {
-    document.location.href ="../html/index.html";
 }
