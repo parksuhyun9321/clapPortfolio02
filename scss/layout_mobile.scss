@@ -154,10 +154,10 @@ section {
         z-index: -999;
         transition: 0.25s ease-in;
         text-align: center;
+        overflow: hidden;
         &.on {
             opacity: 1;
             z-index: 99999;
-            overflow-y: scroll;
         }
         .btnBack {
             position: absolute;
