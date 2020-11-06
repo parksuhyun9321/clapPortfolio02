@@ -1,10 +1,8 @@
+let width = document.body.offsetWidth;
 let ratio = window.devicePixelRatio;
-
-if(ratio == 2 && window.innerWidth <= 1024) {
+if(ratio == 2 && width <= 1024) {
    document.location.href ="../html/mobile.html";
 }
-
-
 
 setInterval(() => {
    let clock = new Date();
@@ -77,3 +75,4 @@ for(let i=0;i<btnClose.length; i++){
         skills.classList.add("hide");
     })
 };
+
