@@ -1,8 +1,3 @@
-let width = document.body.offsetWidth;
-let ratio = window.devicePixelRatio;
-if(ratio == 2 && width <= 1024) {
-   document.location.href ="../html/mobile.html";
-}
 
 setInterval(() => {
    let clock = new Date();
