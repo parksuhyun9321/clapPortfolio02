@@ -1,0 +1,478 @@
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("../images//mobile_bg.jpg") no-repeat;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+#gnb {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 20px;
+    z-index: 2;
+    .gnbList {
+        display: flex;
+        li {
+            width: 33.33%;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 20px;
+            &:nth-child(1){
+                background-color: #4baa0c;
+                display: none;
+            }
+            &:nth-child(2){
+                background-color: #fff;
+            }
+            &:nth-child(3){
+                background-color: #d7d7d7;
+            }
+            &:nth-child(4){
+                background-color: rgb(65, 53, 53);
+            }
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.appBtns {
+    position: fixed;
+    display: flex;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    button {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: #868282;
+        border-radius: 20px;
+        text-align: center;
+        &:after {
+            content: "skill";
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        &:last-child {
+            background-color: #fffafa;
+            margin-left: 40px;
+            &:after {
+                content: "portfolio";
+            }
+        }
+        img {
+            width: 70px;
+        }
+    }
+}
+
+section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .btnBack {
+        display: flex;
+        align-items: center;
+        font-size: 5rem;
+        font-weight: 700;
+        padding-left: 10px;
+        span {
+            font-size: 2rem;
+        }
+    }
+    &#memo {
+        background-color: #FFEB99;
+        opacity: 0;
+        z-index: -999;
+        transition: 0.25s ease-in;
+        &.on {
+            opacity: 1;
+            z-index: 999;
+        }
+        dl {
+            font-family: "Black Han Sans";
+            padding: 30px;
+            dt {
+                .img {
+                    display: block;
+                    img {
+                        width: 200px;
+                    }
+                }
+                font-size: 2.6rem;
+            }
+            dd {
+                font-size: 2rem;
+                margin: 20px 0;
+                word-break: keep-all;
+            }
+        }
+        .info {
+            position: absolute;
+            top: 160px;
+            right: 70px;
+            transform: rotate(20deg);
+            font-size: 2.4rem;
+            font-family: "Noto Sans KR";
+            color: #0e6eb8;
+            line-height: 1.2;
+            &:before {
+                content: '*';
+                position: absolute;
+                left: -30px;
+            }
+        }
+    }
+    &#skill {
+        padding-top: 0;
+        opacity: 0;
+        z-index: -999;
+        transition: 0.25s ease-in;
+        text-align: center;
+        &.on {
+            opacity: 1;
+            z-index: 99999;
+            overflow-y: scroll;
+        }
+        .btnBack {
+            position: absolute;
+            color: #fff;
+            z-index: 3;
+        }
+        article {
+            position: relative;
+            height: 50%;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(12, 7, 7, 0.7);
+            }
+            &.coding {
+                background: url("../images/skill/code-1076533_1920.jpg") no-repeat;
+                background-size: 100% 100%;
+            }
+            &.design {
+                background: url("../images/skill/design-1210160_1920.jpg") no-repeat;
+                background-size: 100% 100%;
+            }
+            .contents {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                top: 20px;
+                color: #fff;
+                h3 {
+                    line-height: 1.4;
+                    font-size: 1.6rem;
+                    font-family: "Noto Sans KR";
+                    text-align: center;                  
+                }
+                .skillList {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                    li {
+                        width: 50%;
+                        margin: 10px 0;
+                        .imgBox {
+                            img {
+                                width: 70px;
+                            }
+                        }
+                        &.html {
+                            dl {
+                                color: #ff5722;
+                            }
+                        }
+                        &.css {
+                            dl {
+                                color: #2196f3;
+                            }
+                        }
+                        &.js {
+                            dl {
+                                color: #ffc107;
+                            }
+                        }
+                        &.jqeury {
+                            dl {
+                                color: #0868ac;
+                            }
+                        }
+                        &.photoShop {
+                            dl {
+                                color: #1ea1e3;
+                            }
+                        }
+                        &.illust {
+                            dl {
+                                color: #ffa426;
+                            }
+                        }
+                        &.figma {
+                            dl {
+                                color: #707785;
+                                dd {
+                                    font-size: 1.6rem;
+                                    &:after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .info {
+                            font-weight: 700;
+                            font-family: "Black Han Sans";
+                            dt {
+                                margin: 5px 0;
+                                font-size: 1.8rem;
+                                br {
+                                    display: none;
+                                }
+                            }
+                            dd {
+                                font-size: 2.8rem;
+                                &:after {
+                                    content: '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &#portfolio {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color:#fffafa;
+        overflow-y: scroll;
+        opacity: 0;
+        z-index: -9999;
+        transition: 0.25s ease;
+        &.on {
+            opacity: 1;
+            z-index: 9999;
+        }
+        ul {
+            li {
+                padding: 80px 0;
+                text-align: center;
+                .contents {
+                    img {
+                        width: 80%;
+                    }
+                }
+                .info {
+                    dt {
+                        font-size: 3.4rem;
+                        font-weight: 700;
+                        line-height: 1.1;
+                        margin-bottom: 20px;
+                    }
+                    dd {
+                        font-size: 2.8rem;
+                        line-height: 1.4;
+                        strong {
+                            font-size: 3.4rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .btns {
+                    margin-top: 40px;
+                    a {
+                        display: inline-block;
+                        padding: 20px 40px;
+                        border: 1px solid #000;
+                        font-size: 3rem;
+                        &:first-child {
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:500px){
+    #gnb {
+        width: 80%;
+        .gnbList {
+            li {
+                padding: 5px;
+                border-radius: 15px;
+                &:nth-child(1) {
+                    display: block;
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .appBtns {
+        top: 30px;
+        left: 30px;
+        button {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            &:after {
+                bottom: -30px;
+                font-size: 1.8rem;
+            }
+            &:last-child {
+                margin-left: 25px;
+            }
+            img {
+                width: 35px;
+            }
+        }
+    }
+
+    section {
+        .btnBack {
+            font-size: 3rem;
+            span {
+                font-size: 1.4rem;
+            }
+        }
+        &#memo {
+            overflow-y: scroll;
+            dl {
+                padding-top: 15px;
+                padding-bottom: 0;
+                dt {
+                    font-size: 2rem;
+                    .img {
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+                dd {
+                    font-size: 1.6rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .info {
+                top: 80px;
+                right: 35px;
+                font-size: 1.4rem;
+                &:before {
+                    font-size: 4rem;
+                }
+            }
+        }
+        &#skill {
+            .btnBack {
+                top: 10px;
+                left: 0px;
+                span {
+                    font-size: 1.8rem;
+                }
+            }
+            article {
+                .contents {
+                    h3 {
+                        font-size: 1.2rem;
+                        word-break: keep-all;
+                    }
+                    .skillList {
+                        li {
+                            .imgBox {
+                                img {
+                                    width: 50px;
+                                }
+                            }
+                            &.figma {
+                                dl {
+                                    dd {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                            .info {
+                                dt {
+                                    font-size: 1.4rem;
+                                    br {
+                                        display: block;
+                                    }
+                                }
+                                dd {
+                                    font-size: 2.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#portfolio {
+            ul {
+                li {
+                    padding: 40px 0 ;
+                    .info {
+                        dt {
+                            font-size: 2rem;
+                        }
+                        dd {
+                            font-size: 1.4rem;
+                            strong {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .btns {
+                        a {
+                            padding: 10px 20px;
+                            font-size: 2rem;
+                            &:first-child {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
