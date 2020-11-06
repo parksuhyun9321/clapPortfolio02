@@ -26,17 +26,17 @@
   #portfolio .portfolioList li .infoBox .btns a:first-child {
     margin: 0;
   }
-  #portfolio .portfolioList li:first-child:hover .contents img {
-    animation: converseAnim_pad 4s ease both;
-  }
   #portfolio .portfolioList li:nth-child(2):hover .contents img {
-    animation: kyoboAnim_pad 4s ease both;
+    animation: clapAnim_pad 4s ease both;
   }
   #portfolio .portfolioList li:nth-child(3):hover .contents img {
-    animation: marathonAnim_pad 4s ease both;
+    animation: converseAnim_pad 4s ease both;
   }
   #portfolio .portfolioList li:nth-child(4):hover .contents img {
-    animation: clapAnim_pad 4s ease both;
+    animation: kyoboAnim_pad 4s ease both;
+  }
+  #portfolio .portfolioList li:nth-child(5):hover .contents img {
+    animation: marathonAnim_pad 4s ease both;
   }
   #portfolio .portfolioList li .deviceBox img {
     width: 300px;
@@ -140,17 +140,17 @@
     transform: translateX(-50%);
     width: 450px;
   }
-  #portfolio .portfolioList li:first-child:hover .contents img {
-    animation: converseAnim_phone 4s ease both;
-  }
   #portfolio .portfolioList li:nth-child(2):hover .contents img {
-    animation: kyoboAnim_phone 4s ease both;
+    animation: clapAnim_phone 4s ease both;
   }
   #portfolio .portfolioList li:nth-child(3):hover .contents img {
-    animation: marathonAnim_phone 4s ease both;
+    animation: converseAnim_phone 4s ease both;
   }
   #portfolio .portfolioList li:nth-child(4):hover .contents img {
-    animation: clapAnim_phone 4s ease both;
+    animation: kyoboAnim_phone 4s ease both;
+  }
+  #portfolio .portfolioList li:nth-child(5):hover .contents img {
+    animation: marathonAnim_phone 4s ease both;
   }
   #portfolio .portfolioList li .contents {
     top: 16px;
