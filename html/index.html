@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/response.css">
     <script src="../js/main.js" defer></script>
+    <script>
+    let width = window.innerWidth;
+    let ratio = window.devicePixelRatio;
+    if (ratio == 2 && width <= 1024) {
+        document.location.href = "../html/mobile.html";
+    }
+</script>
 </head>
 
 <body>
@@ -359,11 +366,5 @@
         </section>
     </main>
 </body>
-<script>
-    let width = window.innerWidth;
-    let ratio = window.devicePixelRatio;
-    if (ratio == 2 && width <= 1024) {
-        document.location.href = "../html/mobile.html";
-    }
-</script>
+
 </html>
