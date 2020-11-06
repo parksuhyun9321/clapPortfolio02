@@ -14,14 +14,10 @@
     <link rel="stylesheet" href="../css/response.css">
     <script src="../js/main.js" defer></script>
     <script>
-        function mobile(){
-            return / Android | webOS | iPhone |iPad/i.test(navigator.userAgent);
-        }
-        if(mobile()){
-            window.location.herf ="https://parksuhyun9321.github.io/clapPortfolio02/html/mobile.html";
-            break;
-        } else {
-            window.location.herf ="https://parksuhyun9321.github.io/clapPortfolio02/html/index.html";
+        let ratio = window.devicePixelRatio;
+        let width = document.body.offsetWidth;
+        if (ratio == 2 && width <= 1024) {
+            window.location.href = "../html/mobile.html";
         }
     </script>
 </head>
