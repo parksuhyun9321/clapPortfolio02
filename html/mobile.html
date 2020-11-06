@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/layout_mobile.css">
+    <script>
+        let ratio = window.devicePixelRatio;
+        let width = window.innerWidth;
+        if (ratio == 1 && width > 1024) {
+            document.location.href = "../html/index.html";
+        }
+    </script>
     <script src="../js/mobile.js" defer></script>
 </head>
 
