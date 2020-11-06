@@ -14,12 +14,16 @@
     <link rel="stylesheet" href="../css/response.css">
     <script src="../js/main.js" defer></script>
     <script>
-    let width = window.innerWidth;
-    let ratio = window.devicePixelRatio;
-    if (ratio == 2 && width <= 1024) {
-        document.location.href = "../html/mobile.html";
-    }
-</script>
+        function mobile(){
+            return / Android | webOS | iPhone |iPad/i.test(navigator.userAgent);
+        }
+        if(mobile()){
+            window.location.herf ="../html/mobile.html";
+            break;
+        } else {
+            window.location.herf ="../html/index.html";
+        }
+    </script>
 </head>
 
 <body>
