@@ -228,7 +228,6 @@ body {
         }
         .btnClose {
             position: relative;
-            top:4px;
             width: 18px;
             height: 25px;
             cursor: pointer;
@@ -254,20 +253,11 @@ body {
         li {
             position: relative;
             margin: 50px 0 120px;
-            &:first-child {
+            &:nth-child(2) {
                 &:hover {
                     .contents {
                         img {
-                            animation: converseAnim 4s ease both;
-                        }
-                    }
-                }
-            }
-            &:nth-child(2){
-                &:hover {
-                    .contents {
-                        img {
-                            animation: kyoboAnim 4s ease both;
+                            animation: clapAnim 4s ease both;
                         }
                     }
                 }
@@ -276,7 +266,7 @@ body {
                 &:hover {
                     .contents {
                         img {
-                            animation: marathonAnim 4s ease both;
+                            animation: converseAnim 4s ease both;
                         }
                     }
                 }
@@ -285,7 +275,16 @@ body {
                 &:hover {
                     .contents {
                         img {
-                            animation: clapAnim 4s ease both;
+                            animation: kyoboAnim 4s ease both;
+                        }
+                    }
+                }
+            }
+            &:nth-child(5){
+                &:hover {
+                    .contents {
+                        img {
+                            animation: marathonAnim 4s ease both;
                         }
                     }
                 }
@@ -542,6 +541,31 @@ body {
 }
 
 
+@keyframes clapAnim {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-1852px);
+    }
+}
+@keyframes clapAnim_pad {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-2423px);
+    }
+}
+@keyframes clapAnim_phone {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-3188px);
+    }
+}
+
 @keyframes converseAnim {
     0% {
         transform: translateY(0);
@@ -617,28 +641,5 @@ body {
     }
     100% {
         transform: translateY(-200px);
-    }
-}
-
-
-@keyframes clapAnim {
-    0% {
-    }
-    100% {
-        transform: translateY(-1852px);
-    }
-}
-@keyframes clapAnim_pad {
-    0% {
-    }
-    100% {
-        transform: translateY(-2423px);
-    }
-}
-@keyframes clapAnim_phone {
-    0% {
-    }
-    100% {
-        transform: translateY(-3188px);
     }
 }
