@@ -247,6 +247,7 @@ body {
 
 #portfolio h2 .btnClose {
   position: relative;
+  top:4px;
   width: 18px;
   height: 25px;
   cursor: pointer;
