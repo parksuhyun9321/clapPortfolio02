@@ -1,8 +1,3 @@
-let ratio = window.devicePixelRatio;
-let width = document.body.offsetWidth;
-if(ratio == 1 && width > 1024) {
-   document.location.href ="../html/index.html";
-}
 
 const memo = document.querySelector(".gnbList li:nth-child(4)");
 const memoCon = document.getElementById("memo");
