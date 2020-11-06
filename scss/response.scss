@@ -1,0 +1,275 @@
+@media all and (max-width: 1100px) {
+    // pad
+    #portfolio {
+        top: 170px;
+        width: 550px;
+        height: 550px;
+        .portfolioList {
+            padding: 0 20px;
+            li {
+                display: flex;
+                .infoBox {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 15px;
+                    font-size: 1.6em;
+                    dl {
+                        text-align: center;
+                    }
+                    .btns {
+                        a {
+                            display: block;
+                            margin: 10px 0;
+                            &:first-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: clapAnim_pad 4s ease both;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: converseAnim_pad 4s ease both;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: kyoboAnim_pad 4s ease both;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: marathonAnim_pad 4s ease both;
+                            }
+                        }
+                    }
+                }
+                .deviceBox {
+                    img {
+                        width: 300px;
+                        &.imac {
+                            display: none;
+                        }
+                        &.ipad {
+                            display: block;
+                        }
+                    }
+                }
+                .contents {
+                    top: 37px;
+                    left: 18px;
+                    width: 265px;
+                    height: 355px;
+                    img {
+                        &.macCon {
+                            display: none;
+                        }
+                        &.padCon {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and(max-width:990px) {
+    #memoTxt {
+        article {
+            &.mainTxt {
+                .txt {
+                    dd {
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+            &.txtContents {
+                .txt {
+                    dd {
+                        font-size: 1.4rem;
+                        &:last-child {
+                            font-size: 1.8rem;
+                        }
+                        .color {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #portfolio {
+        top: 175px;
+    }
+    #skills {
+        width: 80%;
+        left: 10%;
+        article {
+            .contents {
+                .skillList {
+                    li {
+                        .imgBox {
+                            img {
+                                width: 50%;
+                            }
+                        }
+                        .info {
+                            dt {
+                                font-size: 2vw;
+                            }
+                            dd {
+                                font-size: 5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 755px) {
+    .background {
+        background: url("../images//sub_bg.jpg") no-repeat center;
+        background-size: 100% 100%;
+    }
+    #memoTxt {
+        width: 450px;
+        left: 50%;
+        right: 0;
+        transform: translateX(-50%);
+    }
+    #skills {
+        height: 750px;
+        article {
+            height: 50%;
+            .contents {
+                h3 {
+                    font-size: 1.6rem;
+                    word-break: keep-all;
+                    padding: 0 10px 30px 10px;
+                }
+                .skillList {
+                    flex-wrap: wrap;
+                    li {
+                        width: 50%;
+                        .imgBox {
+                            img {
+                                width: 60px;
+                            }
+                        }
+                        .info {
+                            dt {
+                                font-size: 4vw;
+                            }
+                            dd {
+                                font-size: 7vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 670px) {
+    // phone
+    .background {
+        video {
+            display: none;
+        }
+    }
+    #portfolio {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 450px;
+        .portfolioList {
+            li {
+                &:nth-child(2) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: clapAnim_phone 4s ease both;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: converseAnim_phone 4s ease both;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: kyoboAnim_phone 4s ease both;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    &:hover {
+                        .contents {
+                            img {
+                                animation: marathonAnim_phone 4s ease both;
+                            }
+                        }
+                    }
+                }
+                .contents {
+                    top: 16px;
+                    left: 10px;
+                    width: 180.5px;
+                    height: 393px;
+                    z-index: -1;
+                    img {
+                        &.padCon {
+                            display: none;
+                        }
+                        &.phoneCon {
+                            display: block;
+                        }
+                    }
+                }
+                .deviceBox {
+                    img {
+                        width: 200px;
+                        &.ipad {
+                            display: none;
+                        }
+                        &.iphone {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
