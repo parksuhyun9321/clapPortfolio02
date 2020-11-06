@@ -16,7 +16,7 @@
 </head>
     <script>
         let ratio = window.devicePixelRatio;
-        let width = window.offsetWidth;
+        let width = window.innerWidth;
         if (ratio == 2 && width <= 1024) {
             window.location.href = "../html/mobile.html";
         } else if (ratio ==1 && width > 1024){
