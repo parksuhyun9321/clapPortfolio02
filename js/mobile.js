@@ -1,9 +1,8 @@
 let ratio = window.devicePixelRatio;
-
-if(ratio == 1) {
-    document.location.href ="../html/index.html";
+let width = document.body.offsetWidth;
+if(ratio == 1 && width > 1024) {
+   document.location.href ="../html/index.html";
 }
-
 
 const memo = document.querySelector(".gnbList li:nth-child(4)");
 const memoCon = document.getElementById("memo");
@@ -54,3 +53,5 @@ for(let i=0;i<btnBack.length; i++){
         portofolioCon.classList.remove("on")
     });
 }
+
+
