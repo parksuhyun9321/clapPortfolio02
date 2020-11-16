@@ -178,7 +178,7 @@ section#memo .info:before {
 section#memo .info span {
   display: block;
   font-size: 1rem;
-  color: #fff;
+  color: #000;
 }
 
 section#skill {
