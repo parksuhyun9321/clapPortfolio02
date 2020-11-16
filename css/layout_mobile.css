@@ -160,7 +160,7 @@ section#memo dl dd {
 
 section#memo .info {
   position: absolute;
-  top: 160px;
+  top: 100px;
   right: 70px;
   transform: rotate(20deg);
   font-size: 2.4rem;
@@ -433,8 +433,8 @@ section#portfolio ul li .btns a:first-child {
     margin-bottom: 0;
   }
   section#memo .info {
-    top: 80px;
-    right: 35px;
+    top: 40px;
+    right: 30px;
     font-size: 1.2rem;
   }
   section#memo .info:before {
