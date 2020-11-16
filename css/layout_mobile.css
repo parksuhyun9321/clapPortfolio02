@@ -175,18 +175,24 @@ section#memo .info:before {
   left: -30px;
 }
 
+section#memo .info span {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+}
+
 section#skill {
   padding-top: 0;
   opacity: 0;
   z-index: -999;
   transition: 0.25s ease-in;
   text-align: center;
+  overflow: hidden;
 }
 
 section#skill.on {
   opacity: 1;
   z-index: 99999;
-  overflow-y: scroll;
 }
 
 section#skill .btnBack {
