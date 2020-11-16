@@ -178,7 +178,7 @@ section#memo .info:before {
 section#memo .info span {
   display: block;
   font-size: 1rem;
-  color: #000;
+  color: #fff;
 }
 
 section#skill {
@@ -435,7 +435,7 @@ section#portfolio ul li .btns a:first-child {
   section#memo .info {
     top: 80px;
     right: 35px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   section#memo .info:before {
     font-size: 4rem;
