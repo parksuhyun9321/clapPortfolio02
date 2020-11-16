@@ -39,7 +39,7 @@
                     &:hover {
                         .contents {
                             img {
-                                animation: converseAnim_pad 4s ease both;
+                                animation: marathonAnim_pad 4s ease both;
                             }
                         }
                     }
@@ -48,7 +48,7 @@
                     &:hover {
                         .contents {
                             img {
-                                animation: kyoboAnim_pad 4s ease both;
+                                animation: converseAnim_pad 4s ease both;
                             }
                         }
                     }
@@ -57,7 +57,7 @@
                     &:hover {
                         .contents {
                             img {
-                                animation: marathonAnim_pad 4s ease both;
+                                animation: kyoboAnim_pad 4s ease both;
                             }
                         }
                     }
@@ -159,9 +159,28 @@
         left: 50%;
         right: 0;
         transform: translateX(-50%);
+        article {
+            &.mainTxt {
+                .txt {
+                    &.infoTxt {
+                        dd {
+                            &:before {
+                                font-size: 2.4rem;
+                                top: 0;
+                                left: 25px;
+                            }
+                            &:last-child {
+                                font-size: 1rem;
+                                bottom: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     #skills {
-        height: 750px;
+        height: 800px;
         article {
             height: 50%;
             .contents {
@@ -181,7 +200,7 @@
                         }
                         .info {
                             dt {
-                                font-size: 4vw;
+                                font-size: 3.6vw;
                             }
                             dd {
                                 font-size: 7vw;
@@ -196,11 +215,6 @@
 
 @media all and (max-width: 670px) {
     // phone
-    .background {
-        video {
-            display: none;
-        }
-    }
     #portfolio {
         left: 50%;
         transform: translateX(-50%);
@@ -220,7 +234,7 @@
                     &:hover {
                         .contents {
                             img {
-                                animation: converseAnim_phone 4s ease both;
+                                animation: marathonAnim_phone 4s ease both;
                             }
                         }
                     }
@@ -229,7 +243,7 @@
                     &:hover {
                         .contents {
                             img {
-                                animation: kyoboAnim_phone 4s ease both;
+                                animation: converseAnim_phone 4s ease both;
                             }
                         }
                     }
@@ -238,7 +252,7 @@
                     &:hover {
                         .contents {
                             img {
-                                animation: marathonAnim_phone 4s ease both;
+                                animation: kyoboAnim_phone 4s ease both;
                             }
                         }
                     }
