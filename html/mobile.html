@@ -5,22 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portfolio_mobile</title>
-    <meta name="title" content="신입 웹퍼블리셔 박수현의 포트폴리오 입니다.">
-    <meta name="Keywords" content="Web, html, 웹 표준, 포트폴리오, 신입 웹퍼블리셔" />
-    <meta name="description" content="Web, html, 웹 표준, 포트폴리오, 웹퍼블리셔">
-    <meta name="Location" content="Seoul Korea">
-    <meta name="Author" content="박수현">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/layout_mobile.css">
+    <style>
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(63, 62, 62);
+            z-index: 9999;
+            transition: 0.25s ease;
+        }
+
+        #loading .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #loading .inner h2 img {
+            width: 150px;
+        }
+
+        #loading .inner .loadingBar {
+            width: 250px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        #loading .inner .loadingBar:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 10%;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 1);
+            transition: 0.25s ease-in;
+            animation: loadingBar 4s ease forwards;
+        }
+
+        @keyframes loadingBar {
+            0% {
+                width: 0;
+            }
+
+            20% {
+                width: 20%;
+            }
+
+            70% {
+                width: 70%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
     <script>
         let ratio = window.devicePixelRatio;
         let width = window.innerWidth;
         if (ratio == 1 && width > 1024) {
             document.location.href = "../html/index.html";
         }
+        setInterval(()=>{
+            document.getElementById("loading").style.opacity = 0;
+            document.getElementById("loading").style.zIndex = "-9999";
+            document.querySelector("#loading > .inner").style.display ="none";
+        },4000);
     </script>
     <script src="../js/mobile.js" defer></script>
 </head>
@@ -102,7 +161,7 @@
                 개인용 포트폴리오로<br>
                 제작 됨을 알립니다.
                 <span>
-                    "GitHub"으로 호스팅을 하여 속도가<br>
+                    깃헙으로 호스팅을 하여 속도가<br>
                     느릴수있다는점도 알립니다 ^^
                 </span>
             </p>
