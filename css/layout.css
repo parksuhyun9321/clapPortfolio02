@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Noto Sans KR";
+  overflow: hidden;
 }
 
 .background {
@@ -72,7 +73,7 @@ body {
 
 #memoTxt {
   position: absolute;
-  top: 120px;
+  top: 50px;
   right: 50px;
   display: flex;
   flex-direction: row-reverse;
