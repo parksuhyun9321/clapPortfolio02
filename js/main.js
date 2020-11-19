@@ -112,5 +112,5 @@ function dragElement(elmnt) {
       document.onmousemove = null;
     }
 }
-// drag 소스
+// #skill, #portfolio drag 소스
 
