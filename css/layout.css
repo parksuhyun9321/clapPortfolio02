@@ -258,6 +258,7 @@ body {
   position: relative;
   width: 18px;
   height: 25px;
+  margin-top: 4px;
   cursor: pointer;
 }
 
