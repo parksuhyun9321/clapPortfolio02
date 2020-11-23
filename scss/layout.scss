@@ -215,6 +215,8 @@ body {
     border-radius: 30px;
     background-color: #fffafa;
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     &::-webkit-scrollbar {
         display: none;
     }
